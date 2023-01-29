@@ -1,0 +1,28 @@
+{
+    "name": "shader-tests",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/app.js",
+    "scripts": {
+        "setup": "npm install && npm install browser-sync nodemon concurrently",
+        "dev": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome http://localhost:4000 && node scripts/build.js",
+        "browser-sync": "node scripts/browser-sync",
+        "dev-build": "node scripts/build",
+        "buildHtml": "node scripts/buildHtml",
+        "build": "node scripts/build && node scripts/buildHtml",
+        "start": "npm run serve"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.18",
+        "esbuild": "^0.17.4",
+        "esbuild-sass-plugin": "^2.4.5",
+        "fs-extra": "^11.1.0",
+        "tsconfig-paths": "^4.1.2"
+    }
+}
